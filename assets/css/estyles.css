@@ -1,0 +1,29 @@
+body{
+    /* text-align: center; */
+    margin: 0px;
+    height: 0px; 
+    background-color: rgb(11, 2, 19);
+}
+
+#Header{    
+    height: 70px;
+    background-color: rgb(11, 2, 19);
+    box-shadow: 0px 5px 5px rgb(35, 6, 61);
+
+}
+#Menu{
+    float: righ;
+    margin-top: 15px;
+}
+#Menu li{
+    background-color: rgb(30, 3, 54);
+    padding: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#Menu li:hover{
+    transform: scaleY(0.4, 0.4)
+}
