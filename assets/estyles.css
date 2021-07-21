@@ -74,7 +74,7 @@ body {
 }
 
 #Datos .Foto {
-    width: 10%;
+    width: 15%;
     float: left;
 }
 
@@ -203,6 +203,30 @@ body {
 .CardProyectos:hover img, .CardProyectos2:hover img, .CardProyectos3:hover img{
     transform: scale(1.4); 
 }  
+
+@media(max-width: 766px){
+    #Header {
+        height: 350px;
+    }
+    #Header::before{
+        height: 350px;
+    }
+    #Datos{
+        width: 100%;
+        margin-top: 25%;
+    }
+    #Datos .Foto {
+        width: 19%;
+        
+        margin: 0px auto;
+        
+    }
+    .Informacion h2{
+        width: 100%;
+        font-size: 20px;
+        
+    }
+}
 /* Cambiar la apareicia del Scroll */
 ::-webkit-scrollbar {
     width: 5px;
