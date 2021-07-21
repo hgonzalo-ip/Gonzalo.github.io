@@ -1,29 +1,267 @@
-body{
+body {
     /* text-align: center; */
     margin: 0px;
-    height: 0px; 
-    background-color: rgb(11, 2, 19);
-}
-
-#Header{    
-    height: 70px;
-    background-color: rgb(11, 2, 19);
-    box-shadow: 0px 5px 5px rgb(35, 6, 61);
+    height: 0px;
+    background-color: #001325;
 
 }
-#Menu{
-    float: righ;
-    margin-top: 15px;
+
+#Header {
+    
+    height: 550px;
+    background-repeat: no-repeat;
+    background-image: url(../img/Fondo.jpg);
+    box-shadow: 0px 5px 15px #03BFBF;
+   
 }
-#Menu li{
-    background-color: rgb(30, 3, 54);
+
+#Header::before{
+    position: absolute;
+    height: 550px;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(36, 17, 17, 0.486);
+}
+.Center {
+    width: 38%;
+    margin: 0px auto;
+}
+
+#Menu {    
+    background-color: #001325b9 !important;
+
+}
+
+#Menu li {
     padding: 9px;
     padding-left: 12px;
     padding-right: 12px;
     display: inline-block;
+    margin: 0px auto;
     margin-left: 5px;
     margin-right: 5px;
+    overflow: hidden;
+    transition: 0.4s all;
+    background-color: rgba(29, 12, 92, 0.329);
 }
-#Menu li:hover{
-    transform: scaleY(0.4, 0.4)
+
+#Menu li a {
+    margin: 0px auto;
+    color: white;
+
+}
+
+#Menu li:hover {
+    transform: translateY(3px);
+    background-color: rgba(65, 34, 179, 0.521);
+    color: white;
+   
+}
+
+
+
+#Datos {   
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 12%;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#Datos .Foto {
+    width: 15%;
+    float: left;
+}
+
+.Foto img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: Rotar 5s infinite;
+}
+
+@keyframes Rotar {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(350deg);
+    }
+}
+
+.Informacion {
+    z-index: 1;
+    width: 70%;    
+}
+
+.Informacion h2 {
+    text-transform: uppercase;
+    width: 90%;
+    float: right;
+    text-shadow: -2px 8px 6px rgba(224, 228, 221, 0.849);
+ 
+    animation: CambioColor 2s infinite;
+}
+
+.Informacion h4 {
+    text-transform: uppercase;
+    text-shadow: -2px 8px 6px rgba(224, 228, 221, 0.849);
+    width: 100%;
+    float: right;
+
+    animation: CambioColor 2s infinite;
+}
+
+.Informacion h2:hover {
+    color: rgb(6, 6, 46);
+    cursor: pointer;
+}
+
+.Informacion h4:hover {
+    color: rgb(0, 0, 14);
+    cursor: pointer;
+}
+.TxtSobreMi{
+    font-size: 17px;
+    width: 80%;
+    text-align: left;
+}
+@keyframes CambioColor {
+    0% {
+        color: #6e989c
+    }
+
+    50% {
+        color: #f9ffff
+    }
+
+    75% {
+        color: #ffffff
+    }
+
+    100% {
+        color: #8ABABF
+    }
+
+}
+
+/* Foooter */
+#Footer{
+    margin-top: 5%;
+    background-color: #123340;
+    width: 100%;
+    height: 80px;
+}
+#Footer  i{
+    margin-top: 20px;
+    color: rgb(148, 119, 119);
+}
+
+#Footer a{    
+    margin-left: 35px;
+    margin-right: 35px;
+}
+#Footer  span h6{
+    color: #03BFBF;
+}
+
+#Html{
+    color: orange;
+}
+#Php{
+    color: rgb(109, 109, 199);
+    
+}
+/* Proyectos */
+.overlay, .overlay2, .overlay3 {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.719);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+.CardProyectos, .CardProyectos2, .CardProyectos3{
+    overflow: hidden;
+    height: 220px;
+}
+.CardProyectos img, .CardProyectos2 img, .CardProyecto3 img{    
+    transition: transform .2s; 
+}
+.CardProyectos:hover img, .CardProyectos2:hover img, .CardProyectos3:hover img{
+    transform: scale(1.4); 
+}  
+
+@media(max-width: 766px){
+    #Header {
+        height: 350px;
+    }
+    #Header::before{
+        height: 350px;
+    }
+    #Datos{
+        width: 100%;
+        margin-top: 25%;
+    }
+    #Datos .Foto {
+        width: 19%;        
+        margin: 0px auto;
+        
+    }
+    .Informacion h2{
+        width: 100%;
+        font-size: 20px;
+        
+    }
+    /* Iconos del Footer */
+    #RowFooter a span i, #RowFooter a span h6{
+        animation: CambioColor 2s infinite;
+    }
+  
+    @keyframes CambioColor {
+        0%{
+            color: #001325;
+        }        
+        50%{
+            color: #03BFBF;
+        }
+        75%{
+            color: blue;
+        }
+        100%{
+            color:white;
+        }
+
+    }
+    /* Card Proyectos */
+    .CardProyectos, .CardProyectos2, .CardProyectos3{
+        margin: 20px;
+    }
+    .overlay, .overlay2, .overlay3{
+        padding: 10px;
+    }
+    .overlay p, .overlay2 p, .overlay3 p{        
+        font-size: 15px;
+    }
+   
+}
+/* Cambiar la apareicia del Scroll */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(65, 34, 179, 0.521);;
+    border-radius: 2px;
 }

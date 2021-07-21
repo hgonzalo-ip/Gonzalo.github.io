@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/estyles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/estyles.css" type="text/css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <!--Iconos  -->
@@ -28,7 +28,6 @@
                 <nav class="navbar navbar-expand-md bg-dark navbar-dark w-100 fixed-top" id="Menu">
                     <!-- Brand -->
                     <a class="navbar-brand" href="#"><strong>JG</strong></a>
-
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#collapsibleNavbar">
@@ -163,34 +162,37 @@
         <h5 class="text-light ml-4">PROYECTOS</h5>
         <p class="text-light ml-5">Proyectos en los que he trabajado</p>
         <div class="row justify-content-center">
-            <div class="col-xl-3"  onmousemove="Overlay('.overlay')" onmouseout="DeleteOverlay('.overlay')">    
-                <h6 class="text-light">Punto de ventas</h6>                                                 
-                        <div class="card CardProyectos"> 
-                            <img src="assets/img/php/Login.PNG" alt="" width="100%" height="100%">          
-                            <div class="overlay">                            
-                               <div class="row justify-content-center mt-2" >
-                                    <div class="col-md-3">
-                                    <span>
-                                        <a href="#"><i class="fab fa-github-square fa-2x text-light"></i></a> 
-                                        <h6 class="text-light">GIT</h6>                                       
-                                    </span>                                                                                 
-                                    </div>
-                               </div>                    
-                               <div class="row justify-content-star pl-2 pr-2">
-                                    <div class="col-md-12">
-                                        <p class="text-light">
-                                            Sistema que gestiona ventas, compras, clientes, empleados, sucursales etc.
-                                            Creado con php, laravel, Mysql, jquery, html5, css3, Bootstrap 4 entre otras librerias.                                            
-                                        </p>
-                                    </div>
-                               </div>
-                            </div>                                          
-                        </div>                                 
+            <div class="col-xl-3">
+                <h6 class="text-light">Punto de ventas</h6>
+                <div class="card CardProyectos" onclick="Overlay('.overlay')" onmousemove="Overlay('.overlay')"
+                    onmouseout="DeleteOverlay('.overlay')">
+                    <img src="assets/img/php/Login.PNG" alt="" width="100%" height="100%">
+                    <div class="overlay">
+                        <div class="row justify-content-center mt-2">
+                            <div class="col-md-3">
+                                <span>
+                                    <a href="#"><i class="fab fa-github-square fa-2x text-light"></i></a>
+                                    <h6 class="text-light">GIT</h6>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-star pl-2 pr-2">
+                            <div class="col-md-12">
+                                <p class="text-light">
+                                    Sistema que gestiona ventas, compras, clientes, empleados, sucursales etc.
+                                    Creado con php, laravel, Mysql, jquery, html5, css3, Bootstrap 4 entre otras
+                                    librerias.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Jaca -->
-            <div class="col-xl-3" onmousemove="Overlay('.overlay2')" onmouseout="DeleteOverlay('.overlay2')">    
-                <h6 class="text-light">Sistema Citas (Hopital)</h6>                                                 
-                <div class="card CardProyectos2">
+            <div class="col-xl-3">
+                <h6 class="text-light">Sistema Citas (Hopital)</h6>
+                <div class="card CardProyectos2" onclick="Overlay('.overlay2')" onmousemove="Overlay('.overlay2')"
+                    onmouseout="DeleteOverlay('.overlay2')">
                     <img src="assets/img/JavaEE/MenuPC.PNG" alt="" width="100%" height="100%">
                     <div class="overlay2">
                         <div class="row justify-content-center mt-2">
@@ -215,9 +217,10 @@
                 </div>
             </div>
             <!-- Fron Y back -->
-            <div class="col-xl-3" onmousemove="Overlay('.overlay3')" onmouseout="DeleteOverlay('.overlay3')">    
-                <h6 class="text-light">Sistema Citas (Salón de Belleza)</h6>                                                 
-                <div class="card CardProyectos3">
+            <div class="col-xl-3">
+                <h6 class="text-light">Sistema Citas (Salón de Belleza)</h6>
+                <div class="card CardProyectos3" onclick="Overlay('.overlay3')" onmousemove="Overlay('.overlay3')"
+                    onmouseout="DeleteOverlay('.overlay3')">
                     <img src="assets/img/FrondBack/Generar Cita Pc.png" alt="" width="100%" height="100%">
                     <div class="overlay3">
                         <div class="row justify-content-center mt-2">
@@ -232,7 +235,8 @@
                             <div class="col-md-12">
                                 <p class="text-light">
                                     Sistema gestion de citas, ventas, compras, empleados, servicios productos etc.
-                                    la vista de este sistema esta creada con Vuejs, bootstrap, html5, css3 entre otros y el
+                                    la vista de este sistema esta creada con Vuejs, bootstrap, html5, css3 entre otros y
+                                    el
                                     backend es una api rest que esta creada con php y laravel.
                                 </p>
                             </div>
@@ -247,22 +251,34 @@
     <!-- Footer -->
     <footer id="Footer">
         <div class="container">
-            <div class="row justify-content-center"">
-               <span class=" text-center" onmouseover="SobreDe('.fa-instagram ', '.Insta')"
-                onmouseout="FueraDe('.fa-instagram ', '.Insta')">
-                <i class="fab fa-instagram fa-2x"></i>
-                <h6 class="Insta">Instagram</h6>
-                </span>
-                <span class="text-center" onmouseover="SobreDe('.fa-youtube ', '.Youtube')"
-                    onmouseout="FueraDe('.fa-youtube ', '.Youtube')">
-                    <i class="fab fa-youtube fa-2x"></i>
-                    <h6 class="Youtube">Youtube</h6>
-                </span>
-                <span class="text-center" onmouseover="SobreDe('.fa-github-square ', '.Git')"
-                    onmouseout="FueraDe('.fa-github-square ', '.Git')">
-                    <i class="fab fa-github-square fa-2x"></i>
-                    <h6 class="Git">Git hub</h6>
-                </span>
+            <div class="row justify-content-center" id="RowFooter">
+                <a href="">
+                    <span class=" text-center" onmouseover="SobreDe('.fa-instagram ', '.Insta')"
+                        onmouseout="FueraDe('.fa-instagram ', '.Insta')">
+                      <div>
+                        <i class="fab fa-instagram fa-2x"></i>
+                      </div>
+                        <h6 class="Insta">Instagram</h6>
+                    </span>
+                </a>
+                <a href="https://www.youtube.com/channel/UC8AY0BxyX0beelgwZL9_pcw">
+                    <span class="text-center" onmouseover="SobreDe('.fa-youtube ', '.Youtube')"
+                        onmouseout="FueraDe('.fa-youtube ', '.Youtube')">
+                        <div>
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </div>
+                        <h6 class="Youtube">Youtube</h6>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="text-center" onmouseover="SobreDe('.fa-github-square ', '.Git')"
+                        onmouseout="FueraDe('.fa-github-square ', '.Git')">
+                        <div>
+                            <i class="fab fa-github-square fa-2x"></i>
+                        </div>
+                        <h6 class="Git">Git hub</h6>
+                    </span>
+                </a>
 
             </div>
         </div>
