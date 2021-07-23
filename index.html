@@ -43,11 +43,15 @@
                                 </span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Info">Skils<i class="fas fa-codepen ml-2"></i></a>
+                                <a class="nav-link" href="#Info">Skils<i class="fas fa-network-wired ml-2"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Proyectos<i class="fas fa-laptop-code ml-2"></i></a>
+                                <a class="nav-link" href="#ProyectoTrabajados">Proyectos<i class="fas fa-laptop-code ml-2"></i></a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf" target="_blank">Currículum<i class="fas fa-file-alt ml-2"></i></a>
+                            </li>
+                         
                         </ul>
                     </div>
                 </nav>
@@ -161,21 +165,13 @@
 
         <h5 class="text-light ml-4">PROYECTOS</h5>
         <p class="text-light ml-5">Proyectos en los que he trabajado</p>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="ProyectoTrabajados">
             <div class="col-xl-3">
                 <h6 class="text-light">Punto de ventas</h6>
                 <div class="card CardProyectos" onclick="Overlay('.overlay')" onmousemove="Overlay('.overlay')"
                     onmouseout="DeleteOverlay('.overlay')">
                     <img src="assets/img/php/Login.PNG" alt="" width="100%" height="100%">
-                    <div class="overlay">
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-md-3">
-                                <span>
-                                    <a href="#"><i class="fab fa-github-square fa-2x text-light"></i></a>
-                                    <h6 class="text-light">GIT</h6>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="overlay">                     
                         <div class="row justify-content-star pl-2 pr-2">
                             <div class="col-md-12">
                                 <p class="text-light">
@@ -183,10 +179,17 @@
                                     Creado con php, laravel, Mysql, jquery, html5, css3, Bootstrap 4 entre otras
                                     librerias.
                                 </p>
+                                <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank">                   
+                                    <button class="btn-primary mt-2">Proyecto 
+                                        <i class="fab fa-github-square text-light"></i>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                                
+                
             </div>
             <!-- Jaca -->
             <div class="col-xl-3">
@@ -195,14 +198,7 @@
                     onmouseout="DeleteOverlay('.overlay2')">
                     <img src="assets/img/JavaEE/MenuPC.PNG" alt="" width="100%" height="100%">
                     <div class="overlay2">
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-md-3">
-                                <span>
-                                    <a href="#"><i class="fab fa-github-square fa-2x text-light"></i></a>
-                                    <h6 class="text-light">GIT</h6>
-                                </span>
-                            </div>
-                        </div>
+                     
                         <div class="row justify-content-star pl-2 pr-2">
                             <div class="col-md-12">
                                 <p class="text-light">
@@ -211,6 +207,16 @@
                                     con JavaEE, Servelts, jsp, jquey, Mysql ,html5, css3, bootstrap entre otras
                                     librerias.
                                 </p>
+                                <a href="https://github.com/hgonzalo-ip/ApiRest.git" target="_blank">                   
+                                    <button class="btn-primary mt-2">Api Rest 
+                                        <i class="fab fa-github-square text-light"></i>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/hgonzalo-ip/VistaApi-VueJs-.git" target="_blank">                   
+                                    <button class="btn-primary mt-2">Vista (Vue.js) De la Api 
+                                        <i class="fab fa-github-square text-light"></i>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -222,15 +228,7 @@
                 <div class="card CardProyectos3" onclick="Overlay('.overlay3')" onmousemove="Overlay('.overlay3')"
                     onmouseout="DeleteOverlay('.overlay3')">
                     <img src="assets/img/FrondBack/Generar Cita Pc.png" alt="" width="100%" height="100%">
-                    <div class="overlay3">
-                        <div class="row justify-content-center mt-2">
-                            <div class="col-md-3">
-                                <span>
-                                    <a href="#"><i class="fab fa-github-square fa-2x text-light"></i></a>
-                                    <h6 class="text-light">GIT</h6>
-                                </span>
-                            </div>
-                        </div>
+                    <div class="overlay3">                       
                         <div class="row justify-content-star pl-2 pr-2">
                             <div class="col-md-12">
                                 <p class="text-light">
@@ -239,6 +237,11 @@
                                     el
                                     backend es una api rest que esta creada con php y laravel.
                                 </p>
+                                <a href="https://github.com/hgonzalo-ip/CentroSalud-JAVAEE-.git" target="_blank">                   
+                                    <button class="btn-primary mt-2">Proyecto 
+                                        <i class="fab fa-github-square text-light"></i>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +255,7 @@
     <footer id="Footer">
         <div class="container">
             <div class="row justify-content-center" id="RowFooter">
-                <a href="">
+                <a href="https://www.instagram.com/hgonzalo07/">
                     <span class=" text-center" onmouseover="SobreDe('.fa-instagram ', '.Insta')"
                         onmouseout="FueraDe('.fa-instagram ', '.Insta')">
                       <div>
@@ -270,7 +273,7 @@
                         <h6 class="Youtube">Youtube</h6>
                     </span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/hgonzalo-ip">
                     <span class="text-center" onmouseover="SobreDe('.fa-github-square ', '.Git')"
                         onmouseout="FueraDe('.fa-github-square ', '.Git')">
                         <div>
