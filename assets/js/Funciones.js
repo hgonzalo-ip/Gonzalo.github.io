@@ -3,13 +3,14 @@
 
 $(document).ready(function(){
   // $('body').scrollspy({target: ".navbar", offset: 50});   
+  resize();
   var typed = new Typed('#DesarrolloWeb', {
     strings: ["Desarrollador Web.", "Frond y Backend."],
     typeSpeed: 40,
     loop : false , 
     loopCount : Infinity
   });
-  resize();
+ 
 });
 
 //Footer 
