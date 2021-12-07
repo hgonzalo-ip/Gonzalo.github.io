@@ -17,177 +17,211 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Carrusel -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <title>Portafolio</title>
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>José Gonzalo | Portafolio</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
     <header id="Header">
         <!-- Menu  -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center">
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark w-100 fixed-top" id="Menu">
-                    <!-- Brand -->
-                    <a class="navbar-brand" href="#"><strong>JG</strong></a>
-                    <!-- Toggler/collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div class="col-xl-12">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="Menu">
+                        <!-- Brand -->
+                        <a class=" navbar-brand textocentrado" id="Logo" href="#"><strong>JG</strong></a>
+                        <!-- Toggler/collapsibe Button -->
 
-                    <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="nav justify-content-end w-100">
-                            <li class="nav-item">
+                        <!-- Navbar links -->
+                        <ul class="nav justify-content-end w-100" id="DivUl">
+                            <li class="nav-item" onclick="VerRuta('#Inicio')" id="Inicio">
                                 <span>
-                                    <a class="nav-link" href="#Header">Inicio<i class="fas fa-home ml-2"></i></a>
+                                    <a class="nav-link" href="#Header"><span class="TitleRuta d-none">Inicio</span><i
+                                            class="fas fa-home ml-1"></i></a>
                                 </span>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Info">Skils<i class="fas fa-network-wired ml-2"></i></a>
+                            <li class="nav-item" onclick="VerRuta('#Skils')" id="Skils">
+                                <a class="nav-link" href="#Info"><span class="TitleRuta d-none">Skils</span><i
+                                        class="fas fa-network-wired ml-1"></i></a>
+                            </li>
+                            <li class="nav-item" onclick="VerRuta('#Proyectos')" id="Proyectos">
+                                <a class="nav-link" href="#ProyectoTrabajados"><span
+                                        class="TitleRuta">Proyectos</span><i class="fas fa-laptop-code ml-1"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#ProyectoTrabajados">Proyectos<i class="fas fa-laptop-code ml-2"></i></a>
+                                <a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf"
+                                    target="_blank"><span class="TitleRuta">Currículum</span><i
+                                        class="fas fa-file-alt ml-1"></i></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf" target="_blank">Currículum<i class="fas fa-file-alt ml-2"></i></a>
+                            <li class="nav-item" onclick="VerRuta('#Youtube')" id="Youtube">
+                                <a class="nav-link" href="Youtube.html"><span class="TitleRuta">Youtube</span><i
+                                        class="fab fa-youtube ml-1"></i></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Youtube.html">Youtube<i class="fab fa-youtube ml-2"></i></a>
-                            </li>
-                         
+
                         </ul>
-                    </div>
-                </nav>
+
+                    </nav>
+                </div>
             </div>
         </div>
         <!-- Mi Nombre -->
         <br>
         <div class="row justify-content-center" id="Datos">
-            <div class="Foto">
+            <!-- <div class="Foto">
                 <img src="assets/img/FotoPerfil.jpeg" alt="Gonzalo" title="Foto">
+            </div> -->
+            <div class="Informacion" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+                data-aos-offset="0">
+                <h4 class="text-center">Hola, mi nombre es:</h4>
+                <strong>
+                    <h2 class="text-center"><span class="Jose">José</span> <span
+                            class="Gonzalo"><strong>Gonzalo</strong></span></h2>
+                </strong>
+                <h6 class="text-center" id="DesarrolloWeb"></h6>
             </div>
-            <div class="Informacion">
-                <h4 class="text-center">Hola!</h4>
-                <h2 class="text-center">Yo soy <strong>José Gonzalo</strong> <span><i
-                            class="fas fa-laptop-code"></i></span></h2>
-                <h4 class="text-center">Desarrollador web</h4>
+            <div class="DvCotactame">
+                <button class="btn btn-primary btn-lg btn-Contactame" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    Contactame
+                </button>
             </div>
         </div>
         <br>
-
         </div>
     </header>
     <br>
     <!-- Informacion -->
     <div class="container-fluid" id="Info">
         <div class="row justify-content-star">
-            <h5 class="text-light ml-5">Acerca de:</h5>
+            <h2 class="text-light ml-5">Acerca de:</h2>
         </div><br>
-        <div class="row p-4">
-            <div class="col-xl-6">
-                <h6 class="text-light ml-5">SOBRE MI</h6>
-                <br>
-                <div class="row justify-content-center w-100">
-                    <p class="text-light">
-                        <strong> Yo soy José Gonzalo Hernández López / Desarrollador Web</strong>
-                    </p>
-                </div>
-                <div class="row justify-content-center">
-                    <p class=" text-light w-75">
-                        En el 2019 me gradue de Bachiller en Computación con Orientación comercial a mediados
-                        de ese año, me gane una beca para estudiar en un curso de Desarrollo web en intecap
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-6">
-                <div class="row">
-                    <h6 class="text-light ml-5">HABILIDADES</h6>
-                    <br>
-                    <br>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-3">
-
-                                <i class="fab fa-html5 fa-3x " id="Html"></i>
-                                <h6 class="text-light"> Html 5</h6>
-
-                            </div>
-                            <div class="col-3">
-
-                                <i class="fab fa-css3-alt  fa-3x text-primary"></i>
-                                <h6 class="text-light">Css 3</h6>
-
-                            </div>
-                            <div class="col-3">
-
-                                <i class="fab fa-js    fa-3x text-warning"></i>
-                                <h6 class="text-light">JavaScript</h6>
-
-                            </div>
-                            <div class="col-3">
-
-                                <i class="fab fa-bootstrap  fa-3x text-primary"></i>
-                                <h6 class="text-light">bootstrap 4</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <i class="fab fa-php fa-3x" id="Php"></i>
-                                <h6 class="text-light">php</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <i class="fab fa-java fa-3x" id="Php"></i>
-                                <h6 class="text-light">Java EE</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <i class="fab fa-laravel fa-3x text-danger"></i>
-                                <h6 class="text-light">Laravel</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <i class="fab fa-node fa-3x text-success"></i>
-                                <h6 class="text-light">Node js</h6>
-                            </div>
-
-                            <div class="col-3 mt-3">
-                                <i class="fas fa-database fa-3x text-primary"></i>
-                                <h6 class="text-light">Base de Datos</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <i class="fab fa-git-alt fa-3x text-danger"></i>
-                                <h6 class="text-light">Git</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <img src="assets/img/Tecnologia/Mongo.png" alt="MongoDB" width="40%">
-                                <h6 class="text-light">Mongo DB</h6>
-                            </div>
-                            <div class="col-3 mt-3">
-                                <img src="assets/img/Tecnologia/Vuejs.png" alt="VueJs" width="40%">
-                                <h6 class="text-light">Vue Js</h6>
-                            </div>
+        <div class="row justify-content-center p-4" id="InformacionPersonal">
+            <div class="col-xl-11">
+                <div class="row">                  
+                    <div class="col-xl-3">              
+                        <div class="row justify-content-end">
+                            <div class="col-xl-12 col-md-12 col-sm-3 border-bottom border-light">
+                                <h4 class="text-light"><strong>SOBRE MI</strong></h4>     
+                            </div>                           
+                        </div>                            
+                       <center> <img src="assets/img/Perfil.jpeg" alt="Jose Gonzalo" class="Img-Perfil"></center>                                                                                                                            
+                    </div>
+                    <div class="col-xl-7">
+                      <div class="row justify-content-start  mt-5">
+                        <div class="col-xl-12">
+                            <h5 class="text-light">Soy Desarrollador Web.</h5>
+                            <h6 class="text-informacion">En Formación y actualmente <span class="text-primary">Desarrollador Web</span></h6>
+                            <br>
+                            <p class="text-justify text-light">
+                                Tengo 18 años de edad, me considero una persona abierta a nuevos conociminetos y retos 
+                                con <span class="text-primary">muchas ganas de seguir aprendiendo nuevas Tecnologias</span>.
+                            </p>
                         </div>
-                        <hr>
+                      </div>
+                      <br>
+                      <div class="row justify-content-center">
+                        <div class="col-xl-5 ">
+                            <h5 class="text-light text-center"><strong>Estado:</strong> <span class="text-primary "> Disponible</span></h5>
+                            <hr class="border-bottom border-danger" width="75%">
+                        </div>
+                        <div class="col-xl-6">
+                            <h5 class="text-light text-center"><strong>Pais:</strong> <span class="text-primary"> Guatemala</span></h5>
+                            <hr class="border-bottom border-danger" width="75%">
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
+            
+        </div>
+        <div class="row justify-content-center p-4">
+            <div class="col-xl-11">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="row justify-content-end">
+                            <div class="col-xl-12  col-md-12 col-sm-3  border-bottom border-light">
+                                <h4 class="text-light"><strong>MIS HABILIDADES</strong></h4>     
+                            </div>                           
+                        </div>  
+                    </div>
+                </div>
+            </div>                      
+        </div>
+        <div class="row justify-content-center" id="Skill">
+            <div class="col-xl-12 col-md-12 col-sm-12">
+                <div class="container">
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-html5 fa-3x " id="Html" data-aos="fade-left"></i>
+                            <h6 class="text-light"> Html 5</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-css3-alt  fa-3x text-primary" data-aos="fade-right"></i>
+                            <h6 class="text-light">Css 3</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-js fa-3x text-warning" data-aos="flip-left"></i>
+                            <h6 class="text-light">JavaScript</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-bootstrap  fa-3x text-primary" data-aos="flip-right"></i>
+                            <h6 class="text-light">bootstrap 4</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-php fa-3x" id="Php" data-aos="flip-down"></i>
+                            <h6 class="text-light">php</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <img src="assets/img/Tecnologia/Vuejs.png" data-aos="flip-up" class="mt-2" alt="VueJs" width="30%" class="IconoVue">
+                            <h6 class="text-light">Vue Js</h6>
+                        </div>                      
+                
+                  
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-laravel fa-3x text-danger" data-aos="fade-up"></i>
+                            <h6 class="text-light">Laravel</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2" >
+                            <i class="fab fa-node fa-3x text-success" data-aos="fade-right"></i>
+                            <h6 class="text-light">Node js</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fas fa-database fa-3x text-primary" data-aos="fade-down"></i>
+                            <h6 class="text-light">Base de Datos</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <i class="fab fa-git-alt fa-3x text-danger" data-aos="fade-up-right"></i>
+                            <h6 class="text-light">Git</h6>
+                        </div>
+                        <div class="col-3 col-md-2 col-sm-2">
+                            <img src="assets/img/Tecnologia/Mongo.png" data-aos="fade-up-left" alt="MongoDB" width="30%" class="IconoNode">
+                            <h6 class="text-light">Mongo DB</h6>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            
+        </div>
         </div>
         <!-- Proyectos -->
 
         <h5 class="text-light ml-4">PROYECTOS</h5>
         <p class="text-light ml-5">Proyectos en los que he trabajado</p>
         <div class="row justify-content-center" id="ProyectoTrabajados">
-            <div class="col-xl-3">
-                <h6 class="text-light">Punto de ventas</h6>
-                <div class="card CardProyectos" onclick="Overlay('.overlay')" onmousemove="Overlay('.overlay')"
-                    onmouseout="DeleteOverlay('.overlay')">
+            <div class="col-xl-3 col-md-5">
+                <div class="card CardProyectos" data-aos="fade-down" data-aos-duration="1500"
+                    onclick="Overlay('.overlay')" onmousemove="Overlay('.overlay')">
                     <img src="assets/img/php/Login.PNG" alt="" width="100%" height="100%">
-                    <div class="overlay">                     
-                        <div class="row justify-content-star pl-2 pr-2">
-                            <div class="col-md-12">
-                                <p class="text-light">
-                                    Sistema que gestiona ventas, compras, clientes, empleados, sucursales etc.
-                                    Creado con php, laravel, Mysql, jquery, html5, css3, Bootstrap 4 entre otras
-                                    librerias.
-                                </p>
-                                <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank">                   
-                                    <button class="btn btn-primary mt-2">Proyecto 
+                    <div class="overlay" onmouseout="DeleteOverlay('.overlay')">
+                        <div class="container">
+                            <div class="row justify-content-center mt-4">
+                                <div class="col-md-12">
+                                    <h3 class="text-light text-center border-bottom border-danger">Punto de ventas</h3>
+                                    <p class="text-light text-center">PHP-AJAX-LARAVEL-MYSQL</p>
+                                </div>
+                                <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank">
+                                    <button class="btn btn-primary mt-2">Proyecto
                                         <i class="fab fa-github-square text-light"></i>
                                     </button>
                                 </a>
@@ -195,27 +229,21 @@
                         </div>
                     </div>
                 </div>
-                                
-                
             </div>
             <!-- Jaca -->
-            <div class="col-xl-3">
-                <h6 class="text-light">Sistema Citas (Hopital)</h6>
-                <div class="card CardProyectos2" onclick="Overlay('.overlay2')" onmousemove="Overlay('.overlay2')"
-                    onmouseout="DeleteOverlay('.overlay2')">
+            <div class="col-xl-3 col-md-5">
+                <div class="card CardProyectos2" data-aos="flip-left" data-aos-duration="1500"
+                    onclick="Overlay('.overlay2')" onmousemove="Overlay('.overlay2')">
                     <img src="assets/img/JavaEE/MenuPC.PNG" alt="" width="100%" height="100%">
-                    <div class="overlay2">
-                     
-                        <div class="row justify-content-star pl-2 pr-2">
-                            <div class="col-md-12">
-                                <p class="text-light">
-                                    Sistema Gestion de Citas, Recetas Medicas, Empleados, productos, etc. Este
-                                    sistema esta creuado
-                                    con JavaEE, Servelts, jsp, jquey, Mysql ,html5, css3, bootstrap entre otras
-                                    librerias.
-                                </p>
-                                <a href="https://github.com/hgonzalo-ip/CentroSalud-JAVAEE-.git" target="_blank">                   
-                                    <button class="btn btn-primary mt-2">Proyecto 
+                    <div class="overlay2" onmouseout="DeleteOverlay('.overlay2')">
+                        <div class="container">
+                            <div class="row justify-content-center mt-4">
+                                <div class="col-md-12">
+                                    <h3 class="text-light text-center border-bottom border-danger">Citas (Hopital)</h3>
+                                    <p class="text-light text-center">JAVA EE-AJAX-JSP-MYSQL</p>
+                                </div>
+                                <a href="https://github.com/hgonzalo-ip/CentroSalud-JAVAEE-.git" target="_blank">
+                                    <button class="btn btn-primary mt-2">Proyecto
                                         <i class="fab fa-github-square text-light"></i>
                                     </button>
                                 </a>
@@ -225,33 +253,32 @@
                 </div>
             </div>
             <!-- Fron Y back -->
-            <div class="col-xl-3">
-                <h6 class="text-light">Sistema Citas (Salón de Belleza)</h6>
-                <div class="card CardProyectos3" onclick="Overlay('.overlay3')" onmousemove="Overlay('.overlay3')"
-                    onmouseout="DeleteOverlay('.overlay3')">
+            <div class="col-xl-3 col-md-5">
+                <div class="card CardProyectos3" data-aos="fade-up" data-aos-duration="1500"
+                    onclick="Overlay('.overlay3')" onmousemove="Overlay('.overlay3')">
                     <img src="assets/img/FrondBack/Generar Cita Pc.png" alt="" width="100%" height="100%">
-                    <div class="overlay3">                       
-                        <div class="row justify-content-star pl-2 pr-2">
-                            <div class="col-md-12">
-                                <p class="text-light">
-                                    Sistema gestion de citas, ventas, compras, empleados, servicios productos etc.
-                                    la vista de este sistema esta creada con Vuejs, bootstrap, html5, css3 entre otros y
-                                    el
-                                    backend es una api rest que esta creada con php y laravel.
-                                </p>
-                                <div class="row justify-content-center w-100">
-                                    <a href="https://github.com/hgonzalo-ip/ApiRest.git" target="_blank">                   
-                                        <button class="btn btn-primary mt-2 ml-2 mr-3">Api Rest 
-                                            <i class="fab fa-github-square text-light"></i>
-                                        </button>
-                                    </a>
-                                    <a href="https://github.com/hgonzalo-ip/VistaApi-VueJs-.git" target="_blank">                   
-                                        <button class="btn btn-primary mt-2 ">Vista (Vue.js)
-                                            <i class="fab fa-github-square text-light"></i>
-                                        </button>
-                                    </a>
+                    <div class="overlay3" onmouseout="DeleteOverlay('.overlay3')">
+                        <div class="container">
+                            <div class="row justify-content-center mt-4">
+                                <div class="col-md-12">
+                                    <h4 class="text-light border-bottom border-danger">Citas (Salón de Belleza)</h4>
+                                    <p class="text-light">
+                                        VUE.JS - AXIOS - PHP - LARAVEL - PASSPORT - MYSQL
+                                    </p>
+                                    <div class="row justify-content-center w-100">
+                                        <a href="https://github.com/hgonzalo-ip/ApiRest.git" target="_blank">
+                                            <button class="btn btn-primary mt-2 ml-2 mr-3">Api Rest
+                                                <i class="fab fa-github-square text-light"></i>
+                                            </button>
+                                        </a>
+                                        <a href="https://github.com/hgonzalo-ip/VistaApi-VueJs-.git" target="_blank">
+                                            <button class="btn btn-primary mt-2 ">Vista (Vue.js)
+                                                <i class="fab fa-github-square text-light"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+
                                 </div>
-                               
                             </div>
                         </div>
                     </div>
@@ -268,9 +295,9 @@
                 <a href="https://www.instagram.com/hgonzalo07/">
                     <span class=" text-center" onmouseover="SobreDe('.fa-instagram ', '.Insta')"
                         onmouseout="FueraDe('.fa-instagram ', '.Insta')">
-                      <div>
-                        <i class="fab fa-instagram fa-2x"></i>
-                      </div>
+                        <div>
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </div>
                         <h6 class="Insta">Instagram</h6>
                     </span>
                 </a>
@@ -296,6 +323,13 @@
             </div>
         </div>
     </footer>
+    <!-- Animaciones de letras -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
