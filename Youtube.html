@@ -22,44 +22,47 @@
 
 <body data-spy="scroll" data-target=".navbar">
     <header id="HeaderYoutube">
-        <!-- Menu  -->
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark w-100 fixed-top" id="Menu">
+    <!-- Menu  -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="Menu">
                     <!-- Brand -->
-                    <a class="navbar-brand" href="#"><strong>JG</strong></a>
+                    <a class=" navbar-brand textocentrado" id="Logo" href="#"><strong>JG</strong></a>
                     <!-- Toggler/collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
 
                     <!-- Navbar links -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="nav justify-content-end w-100">
-                            <li class="nav-item">
-                                <span>
-                                    <a class="nav-link" href="index.html">Inicio<i class="fas fa-home ml-2"></i></a>
-                                </span>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Podcast">Podcast<i class="fas fa-microphone-alt ml-2"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Cursos">Cursos<i class="fas fa-brain ml-2"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf" target="_blank">Currículum<i class="fas fa-file-alt ml-2"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Youtube.html">Youtube<i class="fab fa-youtube ml-2"></i></a>
-                            </li>
-                         
-                        </ul>
-                    </div>
+                    <ul class="nav justify-content-end w-100" id="DivUl">
+                        <li class="nav-item" onclick="VerRuta('#Inicio')" id="Inicio">
+                            <span>
+                                <a class="nav-link" href="#Header"><span class="TitleRuta d-none">Inicio</span><i
+                                        class="fas fa-home ml-1"></i></a>
+                            </span>
+                        </li>
+                        <li class="nav-item" onclick="VerRuta('#Skils')" id="Skils">
+                            <a class="nav-link" href="#Info"><span class="TitleRuta d-none">Skils</span><i
+                                    class="fas fa-network-wired ml-1"></i></a>
+                        </li>
+                        <li class="nav-item" onclick="VerRuta('#Proyectos')" id="Proyectos">
+                            <a class="nav-link" href="#ProyectoTrabajados"><span
+                                    class="TitleRuta">Proyectos</span><i class="fas fa-laptop-code ml-1"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf"
+                                target="_blank"><span class="TitleRuta">Currículum</span><i
+                                    class="fas fa-file-alt ml-1"></i></a>
+                        </li>
+                        <li class="nav-item" onclick="VerRuta('#Youtube')" id="Youtube">
+                            <a class="nav-link" href="Youtube.html"><span class="TitleRuta">Youtube</span><i
+                                    class="fab fa-youtube ml-1"></i></a>
+                        </li>
+
+                    </ul>
+
                 </nav>
             </div>
         </div>
+    </div>
         <!-- Mi Nombre -->
         <br>
         <div class="row justify-content-center" id="DatosYoutube">      
