@@ -1,345 +1,207 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>José Gonzalo | Portafolio</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/estyles.css" type="text/css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-    <!--Iconos  -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- Carrusel -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- Animaciones -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>José Gonzalo | Portafolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/estyles.css">
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".navbar">
-    <header id="Header">
-        <!-- Menu  -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12">
-                    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" id="Menu">
-                        <!-- Brand -->
-                        <a class=" navbar-brand textocentrado" id="Logo" href="#"><strong>JG</strong></a>
-                        <!-- Toggler/collapsibe Button -->
+<!-- Navbar -->
+<header class="header fixed-top bg-dark shadow-sm">
+  <nav class="navbar navbar-expand-md navbar-dark container">
+    <a class="navbar-brand" href="#">JG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                        <!-- Navbar links -->
-                        <ul class="nav justify-content-end w-100" id="DivUl">
-                            <li class="nav-item" onclick="VerRuta('#Inicio')" id="Inicio">
-                                <span>
-                                    <a class="nav-link" href="#Header"><span class="TitleRuta d-none">Inicio</span><i
-                                            class="fas fa-home ml-1"></i></a>
-                                </span>
-                            </li>
-                            <li class="nav-item" onclick="VerRuta('#Skils')" id="Skils">
-                                <a class="nav-link" href="#Info"><span class="TitleRuta d-none">Skils</span><i
-                                        class="fas fa-network-wired ml-1"></i></a>
-                            </li>
-                            <li class="nav-item" onclick="VerRuta('#Proyectos')" id="Proyectos">
-                                <a class="nav-link" href="#ProyectoTrabajados"><span
-                                        class="TitleRuta">Proyectos</span><i class="fas fa-laptop-code ml-1"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf"
-                                    target="_blank"><span class="TitleRuta">Currículum</span><i
-                                        class="fas fa-file-alt ml-1"></i></a>
-                            </li>
-                            <li class="nav-item" onclick="VerRuta('#Youtube')" id="Youtube">
-                                <a class="nav-link" href="Youtube.html"><span class="TitleRuta">Youtube</span><i
-                                        class="fab fa-youtube ml-1"></i></a>
-                            </li>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#header"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-network-wired"></i> Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="assets/Papeleria-José-Gonzalo-Hernández-López.pdf" target="_blank"><i class="fas fa-file-alt"></i> Currículum</a></li>
+        <li class="nav-item"><a class="nav-link" href="Youtube.html"><i class="fab fa-youtube"></i> Youtube</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-                        </ul>
+<!-- Header / Intro -->
+<section id="header" class="d-flex flex-column justify-content-center align-items-center text-center">
+  <div>
+    <h1 data-aos="fade-down" data-aos-delay="200">José <span class="text-info">Gonzalo</span></h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="400">&mdash; Desarrollador Web  &mdash;</p>
+    <a href="https://wa.me/50247097145" target="_blank" rel="noopener" class="btn btn-info btn-contact" data-aos="zoom-in" data-aos-delay="600">
+      <i class="fab fa-whatsapp mr-2"></i> Contáctame
+    </a>
+  </div>
+</section>
 
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- Mi Nombre -->
-        <br>
-        <div class="row justify-content-center" id="Datos">
-            <!-- <div class="Foto">
-                <img src="assets/img/FotoPerfil.jpeg" alt="Gonzalo" title="Foto">
-            </div> -->
-            <div class="Informacion" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
-                data-aos-offset="0">
-                <h4 class="text-center">Hola, mi nombre es:</h4>
-                <strong>
-                    <h2 class="text-center"><span class="Jose">José</span> <span
-                            class="Gonzalo"><strong>Gonzalo</strong></span></h2>
-                </strong>
-                <h6 class="text-center" id="DesarrolloWeb"></h6>
-            </div>
-            <div class="DvCotactame">
-                <button class="btn btn-primary btn-lg btn-Contactame" data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                    Contactame
-                </button>
-            </div>
-        </div>
-        <br>
-        </div>
-    </header>
-    <br>
-    <!-- Informacion -->
-    <div class="container-fluid" id="Info">
-        <div class="row justify-content-star">
-            <h2 class="text-light ml-5">Acerca de:</h2>
-        </div><br>
-        <div class="row justify-content-center p-4" id="InformacionPersonal">
-            <div class="col-xl-11">
-                <div class="row">                  
-                    <div class="col-xl-3">              
-                        <div class="row justify-content-end">
-                            <div class="col-xl-12 col-md-12 col-sm-3 border-bottom border-light">
-                                <h4 class="text-light"><strong>SOBRE MI</strong></h4>     
-                            </div>                           
-                        </div>                            
-                       <center> <img src="assets/img/Perfil.jpeg" alt="Jose Gonzalo" class="Img-Perfil"></center>                                                                                                                            
-                    </div>
-                    <div class="col-xl-7">
-                      <div class="row justify-content-start  mt-5">
-                        <div class="col-xl-12">
-                            <h5 class="text-light">Soy Desarrollador Web.</h5>
-                            <h6 class="text-informacion">En Formación y actualmente <span class="text-primary">Desarrollador Web</span></h6>
-                            <br>
-                            <p class="text-justify text-light">
-                                Tengo 20 años de edad, me considero una persona abierta a nuevos conociminetos y retos 
-                                con <span class="text-primary">muchas ganas de seguir aprendiendo nuevas Tecnologias</span>.
-                            </p>
-                        </div>
-                      </div>
-                      <br>
-                      <div class="row justify-content-center">
-                        <div class="col-xl-5 ">
-                            <h5 class="text-light text-center"><strong>Estado:</strong> <span class="text-primary "> Disponible.</span></h5>
-                            <hr class="border-bottom border-danger" width="75%">
-                        </div>
-                        <div class="col-xl-6">
-                            <h5 class="text-light text-center"><strong>Pais:</strong> <span class="text-primary"> Guatemala</span></h5>
-                            <hr class="border-bottom border-danger" width="75%">
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="row justify-content-center p-4">
-            <div class="col-xl-11">
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="row justify-content-end">
-                            <div class="col-xl-12  col-md-12 col-sm-3  border-bottom border-light">
-                                <h4 class="text-light"><strong>MIS HABILIDADES</strong></h4>     
-                            </div>                           
-                        </div>  
-                    </div>
-                </div>
-            </div>                      
-        </div>
-        <div class="row justify-content-center" id="Skill">
-            <div class="col-xl-12 col-md-12 col-sm-12">
-                <div class="container">
-                    <div class="row justify-content-center mt-5">
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-html5 fa-3x " id="Html" data-aos="fade-left"></i>
-                            <h6 class="text-light"> Html 5</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-css3-alt  fa-3x text-primary" data-aos="fade-right"></i>
-                            <h6 class="text-light">Css 3</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-js fa-3x text-warning" data-aos="flip-left"></i>
-                            <h6 class="text-light">JavaScript</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-bootstrap  fa-3x text-primary" data-aos="flip-right"></i>
-                            <h6 class="text-light">bootstrap 4</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-php fa-3x" id="Php" data-aos="flip-down"></i>
-                            <h6 class="text-light">php</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <img src="assets/img/Tecnologia/Vuejs.png" data-aos="flip-up" class="mt-2" alt="VueJs" width="30%" class="IconoVue">
-                            <h6 class="text-light">Vue Js</h6>
-                        </div>                      
-                
-                  
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-laravel fa-3x text-danger" data-aos="fade-up"></i>
-                            <h6 class="text-light">Laravel</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2" >
-                            <i class="fab fa-node fa-3x text-success" data-aos="fade-right"></i>
-                            <h6 class="text-light">Node js</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fas fa-database fa-3x text-primary" data-aos="fade-down"></i>
-                            <h6 class="text-light">Base de Datos</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <i class="fab fa-git-alt fa-3x text-danger" data-aos="fade-up-right"></i>
-                            <h6 class="text-light">Git</h6>
-                        </div>
-                        <div class="col-3 col-md-2 col-sm-2">
-                            <img src="assets/img/Tecnologia/Mongo.png" data-aos="fade-up-left" alt="MongoDB" width="30%" class="IconoNode">
-                            <h6 class="text-light">Mongo DB</h6>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-            
-        </div>
-        </div>
-        <!-- Proyectos -->
+<!-- About -->
+<section id="about" class="container d-flex flex-column flex-md-row align-items-center">
+  <img src="assets/img/Perfil.jpeg" alt="Foto de José Gonzalo" class="profile-img mr-md-5 mb-4 mb-md-0" data-aos="fade-right" />
+  <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+    <h2 class="section-title">Acerca de mí</h2>
+    <p>
+      Soy desarrollador web apasionado, con ganas de seguir aprendiendo y creciendo en tecnologías modernas. Me considero responsable, abierto a nuevos retos y siempre dispuesto a entregar soluciones con calidad.
+    </p>
+    <p class="status">Estado: <span style="color:#17a2b8;">Disponible</span> | País: Guatemala</p>
+  </div>
+</section>
 
-        <h5 class="text-light ml-4">PROYECTOS</h5>
-        <p class="text-light ml-5">Proyectos en los que he trabajado</p>
-        <div class="row justify-content-center" id="ProyectoTrabajados">
-            <div class="col-xl-3 col-md-5">
-                <div class="card CardProyectos" data-aos="fade-down" data-aos-duration="1500"
-                    onclick="Overlay('.overlay')" onmousemove="Overlay('.overlay')">
-                    <img src="assets/img/php/Login.PNG" alt="" width="100%" height="100%">
-                    <div class="overlay" onmouseout="DeleteOverlay('.overlay')">
-                        <div class="container">
-                            <div class="row justify-content-center mt-4">
-                                <div class="col-md-12">
-                                    <h3 class="text-light text-center border-bottom border-danger">Punto de ventas</h3>
-                                    <p class="text-light text-center">PHP-AJAX-LARAVEL-MYSQL</p>
-                                </div>
-                                <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank">
-                                    <button class="btn btn-primary mt-2">Proyecto
-                                        <i class="fab fa-github-square text-light"></i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Jaca -->
-            <div class="col-xl-3 col-md-5">
-                <div class="card CardProyectos2" data-aos="flip-left" data-aos-duration="1500"
-                    onclick="Overlay('.overlay2')" onmousemove="Overlay('.overlay2')">
-                    <img src="assets/img/JavaEE/MenuPC.PNG" alt="" width="100%" height="100%">
-                    <div class="overlay2" onmouseout="DeleteOverlay('.overlay2')">
-                        <div class="container">
-                            <div class="row justify-content-center mt-4">
-                                <div class="col-md-12">
-                                    <h3 class="text-light text-center border-bottom border-danger">Citas (Hopital)</h3>
-                                    <p class="text-light text-center">JAVA EE-AJAX-JSP-MYSQL</p>
-                                </div>
-                                <a href="https://github.com/hgonzalo-ip/CentroSalud-JAVAEE-.git" target="_blank">
-                                    <button class="btn btn-primary mt-2">Proyecto
-                                        <i class="fab fa-github-square text-light"></i>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fron Y back -->
-            <div class="col-xl-3 col-md-5">
-                <div class="card CardProyectos3" data-aos="fade-up" data-aos-duration="1500"
-                    onclick="Overlay('.overlay3')" onmousemove="Overlay('.overlay3')">
-                    <img src="assets/img/FrondBack/Generar Cita Pc.png" alt="" width="100%" height="100%">
-                    <div class="overlay3" onmouseout="DeleteOverlay('.overlay3')">
-                        <div class="container">
-                            <div class="row justify-content-center mt-4">
-                                <div class="col-md-12">
-                                    <h4 class="text-light border-bottom border-danger">Citas (Salón de Belleza)</h4>
-                                    <p class="text-light">
-                                        VUE.JS - AXIOS - PHP - LARAVEL - PASSPORT - MYSQL
-                                    </p>
-                                    <div class="row justify-content-center w-100">
-                                        <a href="https://github.com/hgonzalo-ip/ApiRest.git" target="_blank">
-                                            <button class="btn btn-primary mt-2 ml-2 mr-3">Api Rest
-                                                <i class="fab fa-github-square text-light"></i>
-                                            </button>
-                                        </a>
-                                        <a href="https://github.com/hgonzalo-ip/VistaApi-VueJs-.git" target="_blank">
-                                            <button class="btn btn-primary mt-2 ">Vista (Vue.js)
-                                                <i class="fab fa-github-square text-light"></i>
-                                            </button>
-                                        </a>
-                                    </div>
+<!-- Skills -->
+<section id="skills" class="container my-5">
+  <h2 class="section-title" data-aos="fade-up">Habilidades</h2>
+  <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">Tecnologías y herramientas que manejo</p>
+  <div class="row text-center">
+    <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+      <i class="fab fa-html5 skill-icon"></i>
+      <div class="skill-name">HTML5</div>
+    </div>
+    <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+      <i class="fab fa-css3-alt skill-icon"></i>
+      <div class="skill-name">CSS3</div>
+    </div>
+    <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="400">
+      <i class="fab fa-js skill-icon"></i>
+      <div class="skill-name">JavaScript y jquery</div>
+    </div>
+    <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="500">
+      <i class="fab fa-bootstrap skill-icon"></i>
+      <div class="skill-name">Bootstrap 4, 5</div>
+    </div>
+    <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="600">
+      <i class="fab fa-php skill-icon"></i>
+      <div class="skill-name">PHP</div>
+    </div>
+    <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="700">
+      <i class="fab fa-laravel skill-icon" style="color:#ff2d20;"></i>
+      <div class="skill-name">Laravel</div>
+    </div>
+  </div>
+</section>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Projects -->
+<section id="proyectos" class="projects-section container py-5">
+  <h2 class="section-title text-light mb-1">Proyectos</h2>
+  <p class="text-muted mb-4">Proyectos en los que he trabajado</p>
+
+  <div class="row justify-content-center">
+    <!-- Proyecto Card -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="project-card">
+        <img src="assets/img/Rancher.PNG" alt="Gestion de Cerdos de engorde" />
+        <div class="overlay">
+          <h3>Gestión de Cerdos de Engorde</h3>
+          <p>PHP - AJAX - LARAVEL - MYSQL</p>
+          <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank" class="btn-project">
+            Ver Proyecto <i class="fab fa-github"></i>
+          </a>
         </div>
+      </div>
     </div>
 
-
-    <!-- Footer -->
-    <footer id="Footer">
-        <div class="container">
-            <div class="row justify-content-center" id="RowFooter">
-                <a href="https://www.instagram.com/hgonzalo07/">
-                    <span class=" text-center" onmouseover="SobreDe('.fa-instagram ', '.Insta')"
-                        onmouseout="FueraDe('.fa-instagram ', '.Insta')">
-                        <div>
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </div>
-                        <h6 class="Insta">Instagram</h6>
-                    </span>
-                </a>
-                <a href="https://www.youtube.com/channel/UC8AY0BxyX0beelgwZL9_pcw">
-                    <span class="text-center" onmouseover="SobreDe('.fa-youtube ', '.Youtube')"
-                        onmouseout="FueraDe('.fa-youtube ', '.Youtube')">
-                        <div>
-                            <i class="fab fa-youtube fa-2x"></i>
-                        </div>
-                        <h6 class="Youtube">Youtube</h6>
-                    </span>
-                </a>
-                <a href="https://github.com/hgonzalo-ip">
-                    <span class="text-center" onmouseover="SobreDe('.fa-github-square ', '.Git')"
-                        onmouseout="FueraDe('.fa-github-square ', '.Git')">
-                        <div>
-                            <i class="fab fa-github-square fa-2x"></i>
-                        </div>
-                        <h6 class="Git">Git hub</h6>
-                    </span>
-                </a>
-
-            </div>
+    <!-- Repite para otros proyectos -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="project-card">
+        <img src="assets/img/Minidonas.PNG" alt="Gestión de pedidos y ventas" />
+        <div class="overlay">
+          <h3>Gestión de pedidos y ventas</h3>
+          <p>PHP - AJAX - LARAVEL - MYSQL</p>
+          <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank" class="btn-project">
+            Ver Proyecto <i class="fab fa-github"></i>
+          </a>
         </div>
-    </footer>
-    <!-- Animaciones de letras -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- Animaciones -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      </div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
-    </script>
-    <script src="assets/js/Funciones.js"></script>
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="project-card">
+        <img src="assets/img/php/Login.PNG" alt="Punto de ventas" />
+        <div class="overlay">
+          <h3>Punto de ventas</h3>
+          <p>PHP - AJAX - LARAVEL - MYSQL</p>
+          <a href="https://github.com/hgonzalo-ip/PuntoVentasPHP.git" target="_blank" class="btn-project">
+            Ver Proyecto <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="project-card">
+        <img src="assets/img/JavaEE/MenuPC.PNG" alt="Citas (Hospital)" />
+        <div class="overlay">
+          <h3>Citas (Hospital)</h3>
+          <p>JAVA EE - AJAX - JSP - MYSQL</p>
+          <a href="https://github.com/hgonzalo-ip/CentroSalud-JAVAEE-.git" target="_blank" class="btn-project">
+            Ver Proyecto <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="project-card">
+        <img src="assets/img/FrondBack/Generar Cita Pc.png" alt="Citas (Salón de Belleza)" />
+        <div class="overlay">
+          <h3>Citas (Salón de Belleza)</h3>
+          <p>VUE.JS - AXIOS - PHP - LARAVEL - PASSPORT - MYSQL</p>
+          <div class="btn-group-projects">
+            <a href="https://github.com/hgonzalo-ip/ApiRest.git" target="_blank" class="btn-project small">
+              Api Rest <i class="fab fa-github"></i>
+            </a>
+            <a href="https://github.com/hgonzalo-ip/VistaApi-VueJs-.git" target="_blank" class="btn-project small">
+              Vista (Vue.js) <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div>
+    <a href="https://github.com/hgonzalo-ip" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/hgonzaloip/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/hgonzaloip" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/hgonzaloip" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p class="mt-3" style="font-size: 0.9rem; color: #64748b;">© 2025 José Gonzalo Hernández López. Todos los derechos reservados.</p>
+</footer>
+
+<!-- WhatsApp fixed button -->
+<a href="https://wa.me/50247097145" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true,
+  });
+</script>
 
 </body>
-
 </html>
